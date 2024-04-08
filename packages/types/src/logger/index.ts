@@ -3,7 +3,7 @@ export interface Logger {
   shouldLog: (level: string) => void
   setLogLevel: (level: string) => void
   unsetLogLevel: () => void
-  activity: (message: string, config?) => void
+  activity: (message: string, config?) => string
   progress: (activityId, message) => void
   error: (messageOrError, error?) => void
   failure: (activityId, message) => void
